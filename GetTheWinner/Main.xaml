@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1884,2584" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1340,2843</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -81,7 +89,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,2519" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,2778" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="winner" />
     </Sequence.Variables>
@@ -118,7 +126,7 @@
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1998, 280, 111, 29" ElementType="Button" FriendlyName="'Clear the list'" FullSelectorArgument="&lt;webctrl aaname=' Clear the list' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Clear the list' tag='BUTTON' type='button' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle bg-grey-3 text-grey-9 q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase' check:innerText='Clear the list' /&gt;" Guid="2cf400db-6221-4801-ac93-88ae399c088d" InformativeScreenshot="2d789b468d07cc5bc4409634ff573e05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="2034, 284, 67, 21" ElementType="Text" FriendlyName="'Clear the list'" FullSelectorArgument="&lt;webctrl aaname='Clear the list' class='block' parentid='q-app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Clear the list' class='block' parentid='q-app' tag='SPAN' type='' check:innerText='Clear the list' /&gt;" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -195,7 +203,7 @@
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="656, 636, 101, 60" ElementType="Text" FriendlyName="'Alex,'" FullSelectorArgument="&lt;webctrl aaname='Alex,' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="c122ba6d-af53-460c-bc13-b4560d1517a1" InformativeScreenshot="dc6026f7bf43a00454ed10df1d1a2252.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                             <uix:Target DesignTimeRectangle="656, 577, 166, 32" ElementType="Text" FriendlyName="'We have a winner!'" FullSelectorArgument="&lt;webctrl class='text-h6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-h6' tag='DIV' type='' aaname='We have a winner!' check:innerText='We have a winner!' /&gt;" SearchSteps="FuzzySelector" />
                             <uix:Target DesignTimeRectangle="1137, 723, 40, 27" ElementType="Text" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' type='' check:innerText='Close' /&gt;" SearchSteps="FuzzySelector" />
                           </scg:List>
@@ -207,7 +215,7 @@
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1137, 698, 40, 27" ElementType="Text" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' type='' check:innerText='Close' /&gt;" Guid="0381dffa-f011-4e8c-847a-67d01f18d2e5" InformativeScreenshot="0662819730bf5fc0a75b2be0edeedec3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                             <uix:Target DesignTimeRectangle="1126, 691, 64, 41" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' type='button' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase' check:innerText='Close' /&gt;" SearchSteps="FuzzySelector" />
                             <uix:Target DesignTimeRectangle="656, 552, 166, 32" ElementType="Text" FriendlyName="'We have a winner!'" FullSelectorArgument="&lt;webctrl class='text-h6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-h6' tag='DIV' type='' aaname='We have a winner!' check:innerText='We have a winner!' /&gt;" SearchSteps="FuzzySelector" />
                           </scg:List>
