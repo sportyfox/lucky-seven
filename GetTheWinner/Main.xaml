@@ -1,0 +1,249 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1884,2584" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,2519" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="winner" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Wheel of Names | Random name picker" sap:VirtualizedContainerService.HintSize="622,2667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,2274" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Clearing any previous results" sap:VirtualizedContainerService.HintSize="546,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Results'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="2030, 232, 53, 27" ElementType="Text" FriendlyName="'Results'" FullSelectorArgument="&lt;webctrl aaname='Results' class='q-tab__label' parentid='q-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Results' class='q-tab__label' parentid='q-app' tag='DIV' type='' check:innerText='Results' /&gt;" Guid="8da1b8ad-e927-434d-8e39-2fdd1ff0c1c2" InformativeScreenshot="72d41a122e27125ab5e99bf4db850d70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Clear the list'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1998, 280, 111, 29" ElementType="Button" FriendlyName="'Clear the list'" FullSelectorArgument="&lt;webctrl aaname=' Clear the list' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Clear the list' tag='BUTTON' type='button' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle bg-grey-3 text-grey-9 q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase' check:innerText='Clear the list' /&gt;" Guid="2cf400db-6221-4801-ac93-88ae399c088d" InformativeScreenshot="2d789b468d07cc5bc4409634ff573e05.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="2034, 284, 67, 21" ElementType="Text" FriendlyName="'Clear the list'" FullSelectorArgument="&lt;webctrl aaname='Clear the list' class='block' parentid='q-app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Clear the list' class='block' parentid='q-app' tag='SPAN' type='' check:innerText='Clear the list' /&gt;" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Clearing any previous inputs" sap:VirtualizedContainerService.HintSize="546,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entries6'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1907, 228, 107, 36" FriendlyName="'Entries6'" FullSelectorArgument="&lt;webctrl aria-role='tab' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='tab' tag='DIV' type='' class='q-tab relative-position self-stretch flex flex-center text-center q-tab--inactive q-tab--no-caps q-focusable q-hoverable cursor-pointer' aaname='' check:innerText='Entries&amp;#xD;&amp;#xA;6' /&gt;" Guid="cd6c380c-bc71-4dd5-853a-7ea362d1823f" InformativeScreenshot="7dd37b60da95d64446f5e6a3ffc746db.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BeatrizCharlesDiyaFatim…'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1443, 326, 436, 584" ElementType="InputBox" FriendlyName="'BeatrizCharlesDiyaFatim…'" FullSelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' type='' aaname='' /&gt;" Guid="9945cc64-e36b-497d-b6eb-4e42952e128a" InformativeScreenshot="c7ae956ac71f9694b71376bc54d2e139.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Select all" sap:VirtualizedContainerService.HintSize="450,327" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="DebuggerApi" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V3" />
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Delete" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="DebuggerApi" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Shortcuts="[d(hk)][k(Del)][u(hk)]" Version="V3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+            </Sequence>
+            <Sequence DisplayName="Add new inputs" sap:VirtualizedContainerService.HintSize="546,621" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="participants" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,121" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetParticipantList.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:String" x:Key="out_Participants">[participants]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <uix:NTypeInto ActivateBefore="True" DisplayName="Type Into 'DIV'" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Text="[participants]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1443, 326, 436, 584" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' type='' aaname='' /&gt;" Guid="54d3c249-309d-4a69-9f35-a31b8da5b587" InformativeScreenshot="ef278066e85bb517ddc05003ac6bc237.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shuffle'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1451, 213, 66, 21" FriendlyName="'Shuffle'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='q-btn__content text-center col items-center q-anchor--skip justify-center row' tag='SPAN' aaname='' check:innerText='Shuffle' /&gt;" Guid="05049c01-f40a-4872-a51f-5be261c25073" InformativeScreenshot="3600e592282ce3de2a11aa86fce12e36.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Spin the wheel" sap:VirtualizedContainerService.HintSize="546,129" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="496, 183, 928, 928" FriendlyName="'CANVAS wheelCanvas'" FullSelectorArgument="&lt;webctrl id='wheelCanvas' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wheelCanvas' tag='CANVAS' type='' class='' aaname='' /&gt;" Guid="fc5d72d8-d692-42d8-936d-528e9d5da2ed" InformativeScreenshot="55c586596fead8afb79c3199fb204bdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'We have a winner!'" sap:VirtualizedContainerService.HintSize="546,933" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Timeout="10" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,460" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'We have a winner!'" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" TextString="[winner]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="656, 636, 101, 60" ElementType="Text" FriendlyName="'Alex,'" FullSelectorArgument="&lt;webctrl aaname='Alex,' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' /&gt;" Guid="c122ba6d-af53-460c-bc13-b4560d1517a1" InformativeScreenshot="dc6026f7bf43a00454ed10df1d1a2252.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="656, 577, 166, 32" ElementType="Text" FriendlyName="'We have a winner!'" FullSelectorArgument="&lt;webctrl class='text-h6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-h6' tag='DIV' type='' aaname='We have a winner!' check:innerText='We have a winner!' /&gt;" SearchSteps="FuzzySelector" />
+                            <uix:Target DesignTimeRectangle="1137, 723, 40, 27" ElementType="Text" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' type='' check:innerText='Close' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="450,129" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1137, 698, 40, 27" ElementType="Text" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' class='block' tag='SPAN' type='' check:innerText='Close' /&gt;" Guid="0381dffa-f011-4e8c-847a-67d01f18d2e5" InformativeScreenshot="0662819730bf5fc0a75b2be0edeedec3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="1126, 691, 64, 41" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Close' tag='BUTTON' type='button' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase' check:innerText='Close' /&gt;" SearchSteps="FuzzySelector" />
+                            <uix:Target DesignTimeRectangle="656, 552, 166, 32" ElementType="Text" FriendlyName="'We have a winner!'" FullSelectorArgument="&lt;webctrl class='text-h6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='text-h6' tag='DIV' type='' aaname='We have a winner!' check:innerText='We have a winner!' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="512,201" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[new Exception (&quot;No winner. Bad luck!&quot;)]" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="960, 679, 640, 64" FriendlyName="'We have a winner!'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='q-card__section q-card__section--vert row items-center' tag='DIV' aaname='' check:innerText='We have a winner!' /&gt;" Guid="4e3909ae-4562-498f-8fc5-58b5840591d2" InformativeScreenshot="984968b8bb9c19726220c9a437ca093d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;The winner is: &quot; + winner]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" InformativeScreenshot="688d975a7a674e80b69fe136e5709ccd.jpg" Selector="&lt;html title='Wheel of Names | Random name picker' app='chrome.exe' /&gt;" Title="Wheel of Names | Random name picker" Url="https://wheelofnames.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
