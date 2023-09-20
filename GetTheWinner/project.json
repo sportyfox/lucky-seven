@@ -66,5 +66,6 @@
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Portable"
+  "targetFramework": "Portable",
+  "automationHubIdeaUrl": "https://alpha.uipath.com/redfoxalpha/DefaultTenant/automationhub_/automation-profile/get-the-winner"
 }
