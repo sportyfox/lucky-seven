@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://alpha.uipath.com/redfoxalpha/DefaultTenant/testmanager_/",
+  "defaultProject": {
+    "id": "2d9c34e2-6fae-0000-421b-0b45de6ffe29",
+    "name": "Get the winner",
+    "key": "GTW"
+  }
 }
