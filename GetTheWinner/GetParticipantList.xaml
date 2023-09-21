@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,1105</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1340,1015</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetParticipantList_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -73,7 +73,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetParticipantList" sap:VirtualizedContainerService.HintSize="588,1040" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetParticipantList" sap:VirtualizedContainerService.HintSize="588,950" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="participants" />
     </Sequence.Variables>
@@ -100,7 +100,7 @@
         </scg:List>
       </uasc:AppendItemToCollection.Items>
     </uasc:AppendItemToCollection>
-    <If Condition="[in_WithParticipants]" sap:VirtualizedContainerService.HintSize="526,626" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[in_WithParticipants]" sap:VirtualizedContainerService.HintSize="526,536" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence sap:VirtualizedContainerService.HintSize="492,274" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -135,20 +135,12 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence sap:VirtualizedContainerService.HintSize="492,170" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Assign_4">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:String">[out_Participants]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:String">Default</InArgument>
-            </Assign.Value>
-          </Assign>
         </Sequence>
       </If.Else>
     </If>
