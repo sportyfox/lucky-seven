@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1340,2894</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1884,3075</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -89,7 +89,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,2829" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="684,3010" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="winner" />
     </Sequence.Variables>
@@ -98,13 +98,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Wheel of Names | Random name picker" sap:VirtualizedContainerService.HintSize="622,2718" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser: Wheel of Names | Random name picker" sap:VirtualizedContainerService.HintSize="622,2899" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,2325" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,2506" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +161,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
             </Sequence>
-            <Sequence DisplayName="Add new inputs" sap:VirtualizedContainerService.HintSize="546,672" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Add new inputs" sap:VirtualizedContainerService.HintSize="546,853" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="participants" />
               </Sequence.Variables>
@@ -176,6 +176,7 @@
                   <InArgument x:TypeArguments="x:Boolean" x:Key="in_WithParticipants">[WithParicipants]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;test&quot;]" />
               <uix:NTypeInto ActivateBefore="True" DisplayName="Type Into 'DIV'" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Text="[participants]" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="1443, 326, 436, 584" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='basic-editor' parentid='q-app' tag='DIV' type='' aaname='' /&gt;" Guid="54d3c249-309d-4a69-9f35-a31b8da5b587" InformativeScreenshot="ef278066e85bb517ddc05003ac6bc237.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
@@ -192,7 +193,7 @@
                 <uix:TargetAnchorable BrowserURL="https://wheelofnames.com/" DesignTimeRectangle="496, 183, 928, 928" FriendlyName="'CANVAS wheelCanvas'" FullSelectorArgument="&lt;webctrl id='wheelCanvas' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wheelCanvas' tag='CANVAS' type='' class='' aaname='' /&gt;" Guid="fc5d72d8-d692-42d8-936d-528e9d5da2ed" InformativeScreenshot="55c586596fead8afb79c3199fb204bdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Wheel of Names | Random name picker' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'We have a winner!'" sap:VirtualizedContainerService.HintSize="546,933" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Timeout="10" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'We have a winner!'" sap:VirtualizedContainerService.HintSize="546,272" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="dea7103d-afe2-4113-bdfb-cd4be4e561f4" Timeout="10" Version="V3">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,460" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
