@@ -144,9 +144,6 @@
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[out_Participants]</OutArgument>
             </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:String">Default</InArgument>
-            </Assign.Value>
           </Assign>
         </Sequence>
       </If.Else>
