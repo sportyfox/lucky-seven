@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1244,1275</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1296,1275</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetParticipantList_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -145,9 +145,7 @@
               <OutArgument x:TypeArguments="x:String">[out_Participants]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">
-                <Literal x:TypeArguments="x:String" Value="" />
-              </InArgument>
+              <InArgument x:TypeArguments="x:String">Default</InArgument>
             </Assign.Value>
           </Assign>
         </Sequence>
