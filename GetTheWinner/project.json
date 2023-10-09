@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "1.0.11",
+  "projectVersion": "1.0.13",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -67,5 +67,5 @@
   "templateProjectData": {},
   "publishData": {},
   "targetFramework": "Portable",
-  "automationHubIdeaUrl": "https://alpha.uipath.com/redfoxalpha/DefaultTenant/automationhub_/automation-profile/get-the-winner"
+  "automationHubIdeaUrl": "https://staging.uipath.com/redfoxstaging/DefaultTenant/automationhub_/automation-profile/get-th-winner"
 }
