@@ -1,5 +1,13 @@
 {
-  "Tags": [],
+  "Tags": [
+    {
+      "Key": "cicd-8080"
+    },
+    {
+      "Key": "cicd",
+      "Value": "8081"
+    }
+  ],
   "SeparateRuntimeDependencies": true,
   "IncludeSources": true
 }

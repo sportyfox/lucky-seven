@@ -92,10 +92,18 @@
     <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[participants]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="602,143" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
       <uasc:AppendItemToCollection.Items>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">Alex</InArgument>
-          <InArgument x:TypeArguments="x:String">John</InArgument>
-          <InArgument x:TypeArguments="x:String">Mary</InArgument>
-          <InArgument x:TypeArguments="x:String">Helen</InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1">Alex</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">John</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_3">Mary</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_4">Helen</Literal>
+          </InArgument>
         </scg:List>
       </uasc:AppendItemToCollection.Items>
     </uasc:AppendItemToCollection>
@@ -151,7 +159,9 @@
               <OutArgument x:TypeArguments="x:String">[out_Participants]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">Default</InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_5">Default</Literal>
+              </InArgument>
             </Assign.Value>
           </Assign>
         </Sequence>
