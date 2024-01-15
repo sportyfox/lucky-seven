@@ -20,3 +20,9 @@ steps:
     splitOutput: true
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Information'
+- task: UiPathDeploy-preview@4
+  inputs:
+    orchestratorConnection: 'Preview to redfoxalpha DefaultTenant'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'QA'
+    traceLevel: 'Information'
