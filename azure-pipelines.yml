@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UiPathInstallPlatform-preview@4
+  inputs:
+    cliVersion: 'WIN_23.10.8753.32995'
+- task: UiPathPack-preview@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'GetTheWinner\project.json'
+    splitOutput: true
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    traceLevel: 'Information'
