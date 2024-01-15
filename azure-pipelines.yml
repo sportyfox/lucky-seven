@@ -18,6 +18,11 @@ steps:
     versionType: 'AutoVersion'
     projectJsonPath: 'GetTheWinner\project.json'
     splitOutput: true
+    enablePackageMetadata: true
+    repositoryUrl: 'https://github.com/sportyfox/lucky-seven/blob/$(Build.SourceBranchName)/GetTheWinner/project.json'
+    repositoryCommit: '$(Build.SourceVersion)'
+    repositoryBranch: '$(Build.SourceBranchName)'
+    repositoryType: 'git'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Information'
 - task: UiPathDeploy-preview@4
