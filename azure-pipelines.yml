@@ -16,18 +16,18 @@ steps:
 - task: UiPathPack-preview@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: 'GetTheWinner\project.json'
+    projectJsonPath: 'GetTheWinner/project.json'
     splitOutput: true
     enablePackageMetadata: true
     repositoryUrl: 'https://github.com/sportyfox/lucky-seven/blob/$(Build.SourceBranchName)/GetTheWinner/project.json'
     repositoryCommit: '$(Build.SourceVersion)'
     repositoryBranch: '$(Build.SourceBranchName)'
     repositoryType: 'git'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    outputPath: '$(Build.ArtifactStagingDirectory)/Output'
     traceLevel: 'Information'
 - task: UiPathDeploy-preview@4
   inputs:
     orchestratorConnection: 'Preview to redfoxalpha DefaultTenant'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    packagesPath: '$(Build.ArtifactStagingDirectory)/Output'
     folderName: 'QA'
     traceLevel: 'Information'
